@@ -3,7 +3,7 @@ import './card.css';
 
 function Card(props) {
     return (
-      <div className="card">
+      <div onClick={() => props.handleClick(props.id)} className="card">
         <div className="img-container">
           <img alt={props.name} src={props.image} />
         </div>
@@ -20,9 +20,6 @@ function Card(props) {
             </li>
           </ul>
         </div>
-        <span onClick={() => props.handleClick(props.id)} className="remove">
-          𝘅
-        </span>
       </div>
     );
   }
