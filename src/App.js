@@ -103,7 +103,7 @@ render() {
               location={character.location}
             />
           })
-        };
+        }
           </Wrapper>
     </div>
   )
