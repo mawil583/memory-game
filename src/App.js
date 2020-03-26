@@ -26,7 +26,8 @@ class App extends Component {
   handleClick = id => {
     console.log(id);
     if (this.state.idArr.includes(id)) {
-      alert(`Game over! You already chose ${this.state.characters.find(character => character.id === id).name}`)
+      alert(`Game over! You already guessed ${this.state.characters.find(character => character.id === id).name}. 
+      Your final score was ${this.state.score}.`)
       let gameOver = true;
       let score = 0;
       const idArr = [];
